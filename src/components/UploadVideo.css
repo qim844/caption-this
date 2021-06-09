@@ -1,0 +1,32 @@
+.upload-video {
+  width: 860px;
+  height: 340px;
+  border: 2px dotted black;
+  background-color: #F0F0F0;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.await-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.await-upload__label {
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.await-upload__instruction {
+  width: 400px;
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
