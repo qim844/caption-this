@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "captionthiscfca9115": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
