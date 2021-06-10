@@ -4,7 +4,9 @@ import { API, Storage } from 'aws-amplify';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { listNotes } from './graphql/queries';
 import { createNote as createNoteMutation, deleteNote as deleteNoteMutation } from './graphql/mutations';
-
+import { RecoilRoot } from 'recoil';
+import MainPage from './MainPage';
+import LandingPage from './LandingPage';
 
 const initialFormState = { name: '', description: '' }
 
@@ -53,6 +55,8 @@ function App() {
     await Storage.put(file.name, file);
     fetchNotes();
   }
+  const loggedIn = true; // TODO replace with auth logic
+  const content = loggedIn ? <MainPage /> : <LandingPage />
 
   return (
     <div className="App">
@@ -86,6 +90,12 @@ function App() {
           ))
         }
       </div>
+      <RecoilRoot>
+        <div className="App">
+        {content}
+        
+        </div>
+      </RecoilRoot>
       <AmplifySignOut />
     </div>
   );
