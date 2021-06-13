@@ -7,6 +7,7 @@ function MainPage() {
     <main className="main-page">
       <Branding />
       <UploadVideo />
+      <amplify-sign-out button-text="Sign Out"></amplify-sign-out>
     </main>
   )
 }

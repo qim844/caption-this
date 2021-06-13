@@ -18,7 +18,7 @@ function AwaitUpload() {
   const [ uploading, setUploading ] = useState(false);
   const [ currentProgress, setProgress ] = useState(0);
   const fileInput = useRef(null);
-  
+
   const onAddVideoButtonClick = () => {
     fileInput.current.click();
   };
@@ -26,7 +26,7 @@ function AwaitUpload() {
 
   const  onChange = async (e) => {
     if(!e.target.files[0]) return;
-    
+
     const file = e.target.files[0];
     setUploading(true);
     await Storage.put(createUploadFilePath(username, file.name), file, {
@@ -46,18 +46,18 @@ function AwaitUpload() {
           <AddIcon fontSize={"large"} />
         </IconButton>
         <input type='file' id='file' onChange={onChange} ref={fileInput} style={{ display: 'none' }} />
-        <span className="await-upload__label">Upload video</span>  
+        <span className="await-upload__label">Upload Video</span>
         <div className="await-upload__instruction">
           <span>Supported formats: </span>
-          <span>Max file size: </span>
+          <span>Max file size (MB): </span>
         </div>
       </>
     )
   }
-  
-  return ( 
+
+  return (
     <div className="await-upload">
-      <ChooseFile /> 
+      <ChooseFile />
       { uploading && <LinearProgress variant="determinate" value={currentProgress} style={{ width: '100%' }}/> }
     </div>
   )
