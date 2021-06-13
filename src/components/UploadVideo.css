@@ -1,9 +1,10 @@
 .upload-video {
-  width: 860px;
-  height: 340px;
+  width: 500px;
+  height: 200px;
   border: 2px dotted black;
   background-color: #F0F0F0;
   border-radius: 20px;
+  margin: 20px;
 
   display: flex;
   align-items: center;
