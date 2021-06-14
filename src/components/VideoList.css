@@ -1,0 +1,28 @@
+.video-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 850px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.video-list__title {
+  font-size: 40px;
+  margin: 25px auto;
+}
+
+.video-list__list-item {
+  width: 49%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F0F0F0;
+  border-radius: 10px;
+  margin: 15px 0;
+  flex-direction: column;
+}
+
+.video-list__list-item-name {
+  margin-top: 10px;
+}
