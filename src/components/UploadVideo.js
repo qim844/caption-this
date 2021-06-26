@@ -3,7 +3,7 @@ import './UploadVideo.css';
 import IconButton from '@material-ui/core/IconButton';
 import AddIcon from '@material-ui/icons/Add';
 import { Storage } from 'aws-amplify';
-import { useRecoilValue } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import authenticatedUserState from '../recoils/authenticatedUserState';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import {
@@ -11,6 +11,7 @@ import {
   SUPPORTED_MAX_FILE_SIZE_IN_MB,
 } from '../constants/supportedFiles';
 import Alert from '@material-ui/lab/Alert';
+import videoUuIdState from '../recoils/videoUuidState';
 
 function createUploadFilePath(username, filename) {
   return `${username}/${filename}`;
@@ -25,6 +26,7 @@ const isFileSizeValid = (file) =>
  */
 function AwaitUpload() {
   const [uploading, setUploading] = useState(false);
+  const [, setUuid] = useRecoilState(videoUuIdState);
   const [isUploadedVideoValid, setUploadedVideoValid] = useState(true);
   const [currentProgress, setProgress] = useState(0);
   const fileInput = useRef(null);
@@ -57,6 +59,10 @@ function AwaitUpload() {
       }
     );
     setUploading(false);
+    setTimeout(() => {
+      'video upload complete. starting polling for transcribe job completion';
+      setUuid((uuid) => uuid + 1);
+    }, 1000);
     alert('Upload successful');
   };
 

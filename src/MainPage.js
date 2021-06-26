@@ -1,7 +1,7 @@
 import { Auth } from 'aws-amplify';
 import Branding from './components/Branding';
 import UploadVideo from './components/UploadVideo';
-import VideoList from './components/VideoList';
+import VideoListAsync from './components/VideoListAsync';
 import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import authenticatedUserState from './recoils/authenticatedUserState';
@@ -21,7 +21,7 @@ function MainPage() {
     <main className="main-page">
       <Branding />
       <UploadVideo />
-      <VideoList />
+      <VideoListAsync />
       <amplify-sign-out button-text="Sign Out"></amplify-sign-out>
     </main>
   );
