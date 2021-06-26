@@ -6,16 +6,26 @@ import { Storage } from 'aws-amplify';
 import { useRecoilValue } from 'recoil';
 import authenticatedUserState from '../recoils/authenticatedUserState';
 import LinearProgress from '@material-ui/core/LinearProgress';
+import {
+  SUPPORTED_FILE_TYPES,
+  SUPPORTED_MAX_FILE_SIZE_IN_MB,
+} from '../constants/supportedFiles';
+import Alert from '@material-ui/lab/Alert';
 
 function createUploadFilePath(username, filename) {
   return `${username}/${filename}`;
 }
+
+const fileUploadsAccept = SUPPORTED_FILE_TYPES.join(',');
+const isFileSizeValid = (file) =>
+  file.size <= SUPPORTED_MAX_FILE_SIZE_IN_MB * 1000 * 1000;
 
 /**
  * file upload
  */
 function AwaitUpload() {
   const [uploading, setUploading] = useState(false);
+  const [isUploadedVideoValid, setUploadedVideoValid] = useState(true);
   const [currentProgress, setProgress] = useState(0);
   const fileInput = useRef(null);
 
@@ -28,6 +38,13 @@ function AwaitUpload() {
     if (!e.target.files[0]) return;
 
     const file = e.target.files[0];
+
+    if (!isFileSizeValid(file)) {
+      setUploadedVideoValid(false);
+      return;
+    }
+
+    setUploadedVideoValid(true);
     setUploading(true);
     await Storage.put(
       createUploadFilePath(authedUser.username, file.name),
@@ -59,11 +76,18 @@ function AwaitUpload() {
           onChange={onChange}
           ref={fileInput}
           style={{ display: 'none' }}
+          accept={fileUploadsAccept}
         />
+        {!isUploadedVideoValid && (
+          <Alert severity="error">
+            Selected video too large. Max allowed{' '}
+            {SUPPORTED_MAX_FILE_SIZE_IN_MB} mb
+          </Alert>
+        )}
         <span className="await-upload__label">Upload Video</span>
         <div className="await-upload__instruction">
-          <span>Supported formats: </span>
-          <span>Max file size (MB): </span>
+          <span>Supported formats: {fileUploadsAccept} </span>
+          <span>Max file size: {SUPPORTED_MAX_FILE_SIZE_IN_MB} mb</span>
         </div>
       </>
     );
