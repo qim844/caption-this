@@ -1,4 +1,4 @@
-.video-list{
+.video-list {
   display: flex;
   flex-wrap: wrap;
   width: 850px;
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #F0F0F0;
+  background: #f0f0f0;
   border-radius: 10px;
   margin: 15px 0;
   flex-direction: column;
@@ -25,4 +25,8 @@
 
 .video-list__list-item-name {
   margin-top: 10px;
+}
+
+.video-list__download-btn {
+  margin: 10px auto;
 }
