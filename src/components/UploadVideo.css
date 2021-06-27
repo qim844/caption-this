@@ -21,10 +21,12 @@
 .await-upload__label {
   font-weight: normal;
   font-size: 30px;
+  margin: 30px;
 }
 
 .await-upload__instruction {
   width: 400px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;

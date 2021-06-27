@@ -90,14 +90,14 @@ function AwaitUpload() {
         />
         {!isUploadedVideoValid && (
           <Alert severity="error">
-            Selected video too large. Max allowed{' '}
-            {SUPPORTED_MAX_FILE_SIZE_IN_MB} mb
+            Selected video is too large. Max size allowed is {' '}
+            {SUPPORTED_MAX_FILE_SIZE_IN_MB} MB
           </Alert>
         )}
         <span className="await-upload__label">Upload Video</span>
         <div className="await-upload__instruction">
           <span>Supported formats: {fileUploadsAccept} </span>
-          <span>Max file size: {SUPPORTED_MAX_FILE_SIZE_IN_MB} mb</span>
+          <span>Max file size: {SUPPORTED_MAX_FILE_SIZE_IN_MB} MB</span>
         </div>
       </>
     );
