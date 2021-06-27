@@ -11,7 +11,7 @@ const videoListAsyncSelector = selector({
       const authedUser = await get(authenticatedUserState);
       const uuid = get(videoUuIdState);
       const username = authedUser.username;
-      console.log(uuid);
+      console.log(`uuid: ${uuid}`);
       if (!username) {
         console.log('no username');
         return [];

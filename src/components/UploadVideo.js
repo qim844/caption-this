@@ -3,7 +3,7 @@ import './UploadVideo.css';
 import IconButton from '@material-ui/core/IconButton';
 import AddIcon from '@material-ui/icons/Add';
 import { Storage } from 'aws-amplify';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 import authenticatedUserState from '../recoils/authenticatedUserState';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import {
@@ -12,6 +12,7 @@ import {
 } from '../constants/supportedFiles';
 import Alert from '@material-ui/lab/Alert';
 import videoUuIdState from '../recoils/videoUuidState';
+import pollingState from '../recoils/pollingState';
 
 function createUploadFilePath(username, filename) {
   return `${username}/${filename}`;
@@ -29,6 +30,7 @@ function AwaitUpload() {
   const [, setUuid] = useRecoilState(videoUuIdState);
   const [isUploadedVideoValid, setUploadedVideoValid] = useState(true);
   const [currentProgress, setProgress] = useState(0);
+  const setPollingState = useSetRecoilState(pollingState);
   const fileInput = useRef(null);
 
   const onAddVideoButtonClick = () => {
@@ -60,10 +62,12 @@ function AwaitUpload() {
     );
     setUploading(false);
     setTimeout(() => {
-      'video upload complete. starting polling for transcribe job completion';
+      console.log(
+        'video upload complete. starting polling for transcribe job completion'
+      );
       setUuid((uuid) => uuid + 1);
+      setPollingState(true);
     }, 1000);
-    alert('Upload successful');
   };
 
   function ChooseFile() {

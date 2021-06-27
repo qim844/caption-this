@@ -3,17 +3,18 @@ import React, { useRef, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { useRecoilValue, useRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
 import videoListAsyncSelector from '../recoils/videoListSelector';
 import videoUuIdState from '../recoils/videoUuidState';
 import useInterval from '../hooks/useInterval';
 import { S3_SRT_BUCKET, S3_VIDEO_BUCKET } from '../constants/buckets';
 import './VideoList.css';
+import pollingState from '../recoils/pollingState';
 
 function ListOfVideos({ downloadOverlayVideo, downloadSubtitle }) {
   const videoList = useRecoilValue(videoListAsyncSelector);
-  const [setUuid] = useRecoilState(videoUuIdState);
-  const [isRunning, setIsRunning] = useState(true);
+  const setUuid = useSetRecoilState(videoUuIdState);
+  const [isRunning, setPollingState] = useRecoilState(pollingState);
 
   const conitnuePolling = () => {
     return !videoList.every((video) => {
@@ -26,7 +27,7 @@ function ListOfVideos({ downloadOverlayVideo, downloadSubtitle }) {
       setUuid((uuid) => uuid + 1);
 
       if (!conitnuePolling()) {
-        setIsRunning(false);
+        setPollingState(false);
       }
     },
     isRunning ? 5000 : null
