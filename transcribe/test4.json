@@ -1,0 +1,495 @@
+{
+	"jobName": "public_weil3_Chinese_simple_test.mp4",
+	"accountId": "245797410214",
+	"results": {
+		"language_code": "zh-CN",
+		"transcripts": [
+			{
+				"transcript": "大家好欢迎来到管家课堂我是田老师非常荣幸呢能得到管家课堂的邀请录制CD二零一八入门教程好这节课呢？我们先简单到认识一下什么是CD"
+			}
+		],
+		"speaker_labels": {
+			"speakers": 2,
+			"segments": [
+				{
+					"start_time": "0.24",
+					"speaker_label": "spk_0",
+					"end_time": "3.965",
+					"items": [
+						{
+							"start_time": "0.24",
+							"speaker_label": "spk_0",
+							"end_time": "0.48"
+						},
+						{
+							"start_time": "0.48",
+							"speaker_label": "spk_0",
+							"end_time": "0.85"
+						},
+						{
+							"start_time": "0.86",
+							"speaker_label": "spk_0",
+							"end_time": "1.19"
+						},
+						{
+							"start_time": "1.19",
+							"speaker_label": "spk_0",
+							"end_time": "1.64"
+						},
+						{
+							"start_time": "1.65",
+							"speaker_label": "spk_0",
+							"end_time": "1.96"
+						},
+						{
+							"start_time": "1.96",
+							"speaker_label": "spk_0",
+							"end_time": "2.6"
+						},
+						{
+							"start_time": "2.73",
+							"speaker_label": "spk_0",
+							"end_time": "2.94"
+						},
+						{
+							"start_time": "2.94",
+							"speaker_label": "spk_0",
+							"end_time": "3.24"
+						},
+						{
+							"start_time": "3.25",
+							"speaker_label": "spk_0",
+							"end_time": "3.48"
+						},
+						{
+							"start_time": "3.48",
+							"speaker_label": "spk_0",
+							"end_time": "3.95"
+						}
+					]
+				},
+				{
+					"start_time": "4.74",
+					"speaker_label": "spk_1",
+					"end_time": "6.88",
+					"items": [
+						{
+							"start_time": "4.89",
+							"speaker_label": "spk_1",
+							"end_time": "5.27"
+						},
+						{
+							"start_time": "5.27",
+							"speaker_label": "spk_1",
+							"end_time": "5.67"
+						},
+						{
+							"start_time": "5.67",
+							"speaker_label": "spk_1",
+							"end_time": "5.92"
+						},
+						{
+							"start_time": "5.93",
+							"speaker_label": "spk_1",
+							"end_time": "6.18"
+						},
+						{
+							"start_time": "6.18",
+							"speaker_label": "spk_1",
+							"end_time": "6.47"
+						},
+						{
+							"start_time": "6.47",
+							"speaker_label": "spk_1",
+							"end_time": "6.88"
+						}
+					]
+				},
+				{
+					"start_time": "6.88",
+					"speaker_label": "spk_0",
+					"end_time": "10.465",
+					"items": [
+						{
+							"start_time": "6.88",
+							"speaker_label": "spk_0",
+							"end_time": "7.22"
+						},
+						{
+							"start_time": "7.22",
+							"speaker_label": "spk_0",
+							"end_time": "7.29"
+						},
+						{
+							"start_time": "7.29",
+							"speaker_label": "spk_0",
+							"end_time": "7.82"
+						},
+						{
+							"start_time": "7.83",
+							"speaker_label": "spk_0",
+							"end_time": "8.33"
+						},
+						{
+							"start_time": "8.34",
+							"speaker_label": "spk_0",
+							"end_time": "8.84"
+						},
+						{
+							"start_time": "8.84",
+							"speaker_label": "spk_0",
+							"end_time": "9.09"
+						},
+						{
+							"start_time": "9.09",
+							"speaker_label": "spk_0",
+							"end_time": "9.46"
+						},
+						{
+							"start_time": "9.47",
+							"speaker_label": "spk_0",
+							"end_time": "9.83"
+						},
+						{
+							"start_time": "9.83",
+							"speaker_label": "spk_0",
+							"end_time": "10.45"
+						}
+					]
+				},
+				{
+					"start_time": "11.34",
+					"speaker_label": "spk_1",
+					"end_time": "14.44",
+					"items": [
+						{
+							"start_time": "11.34",
+							"speaker_label": "spk_1",
+							"end_time": "11.89"
+						},
+						{
+							"start_time": "11.9",
+							"speaker_label": "spk_1",
+							"end_time": "12.14"
+						},
+						{
+							"start_time": "12.14",
+							"speaker_label": "spk_1",
+							"end_time": "12.32"
+						},
+						{
+							"start_time": "12.32",
+							"speaker_label": "spk_1",
+							"end_time": "12.48"
+						},
+						{
+							"start_time": "12.48",
+							"speaker_label": "spk_1",
+							"end_time": "12.85"
+						},
+						{
+							"start_time": "12.86",
+							"speaker_label": "spk_1",
+							"end_time": "13.11"
+						},
+						{
+							"start_time": "13.11",
+							"speaker_label": "spk_1",
+							"end_time": "13.57"
+						},
+						{
+							"start_time": "13.58",
+							"speaker_label": "spk_1",
+							"end_time": "14.18"
+						},
+						{
+							"start_time": "14.18",
+							"speaker_label": "spk_1",
+							"end_time": "14.44"
+						}
+					]
+				},
+				{
+					"start_time": "14.45",
+					"speaker_label": "spk_0",
+					"end_time": "16.7312",
+					"items": [
+						{
+							"start_time": "14.45",
+							"speaker_label": "spk_0",
+							"end_time": "14.87"
+						},
+						{
+							"start_time": "14.87",
+							"speaker_label": "spk_0",
+							"end_time": "15.48"
+						},
+						{
+							"start_time": "15.49",
+							"speaker_label": "spk_0",
+							"end_time": "15.91"
+						},
+						{
+							"start_time": "15.91",
+							"speaker_label": "spk_0",
+							"end_time": "16.14"
+						},
+						{
+							"start_time": "16.15",
+							"speaker_label": "spk_0",
+							"end_time": "16.72"
+						}
+					]
+				}
+			]
+		},
+		"language_identification": [
+			{ "score": "1", "code": "zh-CN" },
+			{ "score": "0.0001", "code": "ja-JP" },
+			{ "score": "0.0001", "code": "ko-KR" },
+			{ "score": "0.0001", "code": "tr-TR" },
+			{ "score": "0.0001", "code": "fr-FR" }
+		],
+		"items": [
+			{
+				"start_time": "0.24",
+				"end_time": "0.48",
+				"alternatives": [{ "confidence": "1.0", "content": "大家" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "0.48",
+				"end_time": "0.85",
+				"alternatives": [{ "confidence": "1.0", "content": "好" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "0.86",
+				"end_time": "1.19",
+				"alternatives": [{ "confidence": "1.0", "content": "欢迎" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "1.19",
+				"end_time": "1.64",
+				"alternatives": [{ "confidence": "1.0", "content": "来到" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "1.65",
+				"end_time": "1.96",
+				"alternatives": [{ "confidence": "0.9924", "content": "管家" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "1.96",
+				"end_time": "2.6",
+				"alternatives": [{ "confidence": "0.9983", "content": "课堂" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "2.73",
+				"end_time": "2.94",
+				"alternatives": [{ "confidence": "1.0", "content": "我" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "2.94",
+				"end_time": "3.24",
+				"alternatives": [{ "confidence": "0.742", "content": "是" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "3.25",
+				"end_time": "3.48",
+				"alternatives": [{ "confidence": "0.9765", "content": "田" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "3.48",
+				"end_time": "3.95",
+				"alternatives": [{ "confidence": "1.0", "content": "老师" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "4.89",
+				"end_time": "5.27",
+				"alternatives": [{ "confidence": "1.0", "content": "非常" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "5.27",
+				"end_time": "5.67",
+				"alternatives": [{ "confidence": "1.0", "content": "荣幸" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "5.67",
+				"end_time": "5.92",
+				"alternatives": [{ "confidence": "1.0", "content": "呢" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "5.93",
+				"end_time": "6.18",
+				"alternatives": [{ "confidence": "1.0", "content": "能" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "6.18",
+				"end_time": "6.47",
+				"alternatives": [{ "confidence": "1.0", "content": "得到" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "6.47",
+				"end_time": "6.88",
+				"alternatives": [{ "confidence": "0.9932", "content": "管家" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "6.88",
+				"end_time": "7.22",
+				"alternatives": [{ "confidence": "0.8974", "content": "课堂" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "7.22",
+				"end_time": "7.29",
+				"alternatives": [{ "confidence": "0.8043", "content": "的" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "7.29",
+				"end_time": "7.82",
+				"alternatives": [{ "confidence": "1.0", "content": "邀请" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "7.83",
+				"end_time": "8.33",
+				"alternatives": [{ "confidence": "1.0", "content": "录制" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "8.34",
+				"end_time": "8.84",
+				"alternatives": [{ "confidence": "1.0", "content": "CD" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "8.84",
+				"end_time": "9.09",
+				"alternatives": [{ "confidence": "0.7235", "content": "二零" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "9.09",
+				"end_time": "9.46",
+				"alternatives": [{ "confidence": "0.7225", "content": "一八" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "9.47",
+				"end_time": "9.83",
+				"alternatives": [{ "confidence": "0.9999", "content": "入门" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "9.83",
+				"end_time": "10.45",
+				"alternatives": [{ "confidence": "0.9971", "content": "教程" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "11.34",
+				"end_time": "11.89",
+				"alternatives": [{ "confidence": "0.9994", "content": "好" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "11.9",
+				"end_time": "12.14",
+				"alternatives": [{ "confidence": "0.9741", "content": "这" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "12.14",
+				"end_time": "12.32",
+				"alternatives": [{ "confidence": "0.9562", "content": "节" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "12.32",
+				"end_time": "12.48",
+				"alternatives": [{ "confidence": "0.9561", "content": "课" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "12.48",
+				"end_time": "12.85",
+				"alternatives": [{ "confidence": "1.0", "content": "呢" }],
+				"type": "pronunciation"
+			},
+			{
+				"alternatives": [{ "confidence": "0.0", "content": "？" }],
+				"type": "punctuation"
+			},
+			{
+				"start_time": "12.86",
+				"end_time": "13.11",
+				"alternatives": [{ "confidence": "1.0", "content": "我们" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "13.11",
+				"end_time": "13.57",
+				"alternatives": [{ "confidence": "0.9997", "content": "先" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "13.58",
+				"end_time": "14.18",
+				"alternatives": [{ "confidence": "1.0", "content": "简单" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "14.18",
+				"end_time": "14.44",
+				"alternatives": [{ "confidence": "0.8844", "content": "到" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "14.45",
+				"end_time": "14.87",
+				"alternatives": [{ "confidence": "1.0", "content": "认识" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "14.87",
+				"end_time": "15.48",
+				"alternatives": [{ "confidence": "1.0", "content": "一下" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "15.49",
+				"end_time": "15.91",
+				"alternatives": [{ "confidence": "1.0", "content": "什么" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "15.91",
+				"end_time": "16.14",
+				"alternatives": [{ "confidence": "0.9651", "content": "是" }],
+				"type": "pronunciation"
+			},
+			{
+				"start_time": "16.15",
+				"end_time": "16.72",
+				"alternatives": [{ "confidence": "0.8544", "content": "CD" }],
+				"type": "pronunciation"
+			}
+		]
+	},
+	"status": "COMPLETED"
+}
