@@ -18,7 +18,7 @@ Some language such as Chinese doesn't have space between words.
 Maybe we can move the video overlay process to client side. This way we can reduce the download video cost and the potential time limit constraint of lambda function. 
 
 ## Buckets set up:
-staging: user video upload
-transcribe-handback: AWS Transcribe result in JSON format
-srt-handback: transcribe result is converted to SRT format
-video-overlay-handback: SRT is added to user video to get the video with captions.
+- staging: user video upload
+- transcribe-handback: AWS Transcribe result in JSON format
+- srt-handback: transcribe result is converted to SRT format
+- video-overlay-handback: SRT is added to user video to get the video with captions.
