@@ -5,7 +5,7 @@ const s3 = new AWS.S3({
 });
 
 const PUNCTUATIONS = new Set(['.', ',', '?']);
-const CAPTION_LENGTH = 8;
+const CAPTION_LENGTH = 7;
 const NO_SPACE_LANGUAGE = new Set(['zh-CN', 'ja-JP', 'ko-KR']);
 
 let spaceBtwWordsLanguage = true;
