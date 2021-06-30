@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import videoListAsyncSelector from '../recoils/videoListSelector';
 import videoUuIdState from '../recoils/videoUuidState';
 import useInterval from '../hooks/useInterval';
@@ -13,7 +13,7 @@ import pollingState from '../recoils/pollingState';
 
 function ListOfVideos({ downloadOverlayVideo, downloadSubtitle }) {
   const videoList = useRecoilValue(videoListAsyncSelector);
-  const setUuid = useSetRecoilState(videoUuIdState);
+  const [videoUuid, setUuid] = useRecoilState(videoUuIdState);
   const [isRunning, setPollingState] = useRecoilState(pollingState);
 
   const conitnuePolling = () => {
@@ -25,8 +25,8 @@ function ListOfVideos({ downloadOverlayVideo, downloadSubtitle }) {
   useInterval(
     () => {
       setUuid((uuid) => uuid + 1);
-
-      if (!conitnuePolling()) {
+      const continuePoll = conitnuePolling();
+      if (!continuePoll) {
         setPollingState(false);
       }
     },
@@ -35,7 +35,7 @@ function ListOfVideos({ downloadOverlayVideo, downloadSubtitle }) {
 
   return (videoList || []).map((video, i) => {
     return (
-      <div className="video-list__list-item" key={video.key}>
+      <div className="video-list__list-item" key={video.key + videoUuid}>
         {video.subtitleReady ? (
           <Button
             variant="contained"
